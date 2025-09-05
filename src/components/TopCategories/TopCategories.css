@@ -1,0 +1,148 @@
+#top-categories-container {
+  padding: 0 3rem;
+}
+
+#top-categories-title {
+  display: inline-block;
+  width: 100%;
+  background: linear-gradient(#f22d13) no-repeat center bottom;
+  background-size: 8rem 2px;
+  text-align: center;
+  align-items: center;
+}
+
+#top-categories {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+#main-category {
+  background-color: #f22d13;
+  color: #fff;
+  flex: 1;
+}
+
+#main-category-image-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#main-category-image-container img {
+  width: 28rem;
+  height: 23rem;
+}
+
+#main-category-information {
+  margin: 0 2rem;
+}
+
+#main-category-information h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+#main-category-information p {
+  font-size: 2rem;
+}
+
+#main-category-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#see-all-categories {
+  font-size: 2rem;
+}
+
+#main-category-button button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #f22d13;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#arrow {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#secondary-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  height: 100%;
+}
+
+@media (max-width: 64rem) {
+  #top-categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  #main-category-information {
+    text-align: center;
+  }
+
+  #main-category-information h1 {
+    font-size: 3.5rem;
+  }
+
+  #main-category-information p {
+    font-size: 1.5rem;
+  }
+
+  #main-category-image-container img {
+    width: 22rem;
+    height: 18rem;
+  }
+
+  #secondary-categories {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  #main-category-information h1 {
+    font-size: 2.5rem;
+  }
+
+  #main-category-information p {
+    font-size: 1.2rem;
+  }
+
+  #main-category-image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 18rem;
+  }
+
+  #secondary-categories {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  #see-all-categories {
+    font-size: 1.2rem;
+  }
+
+  #main-category-button button {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 1rem;
+  }
+}

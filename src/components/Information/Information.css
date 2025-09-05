@@ -1,0 +1,109 @@
+#information-container {
+  margin-top: 2rem;
+  display: grid;
+  gap: 0.25rem;
+  box-sizing: border-box;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.information-card {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 20rem;
+}
+
+.information-card.icon {
+  color: #f22d13;
+}
+
+.informationImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.information-card.text {
+  background-color: #f22d13;
+  color: #fff;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.informationIcon {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+}
+
+.informationIconText {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.informationIconLine {
+  height: 3px;
+  background-color: #f22d13;
+  width: 40%;
+}
+
+@media (max-width: 64rem) {
+  #information-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  #information-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .informationIcon {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .informationIconText {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 64rem) {
+  #information-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .informationIcon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .informationIconText {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  #information-container {
+    grid-template-columns: 1fr;
+  }
+
+  .information-card.text {
+    font-size: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .informationIcon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .informationIconText {
+    font-size: 1.2rem;
+  }
+}
